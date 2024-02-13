@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Read More Description Prototype "New To Athena #454"
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates a reusable DescriptionComponent. The DescriptionComponent is designed to display text content with a fixed height and width, allowing only a specified number of lines to be visible at a time. If the text exceeds the maximum number of lines, it truncates the text and provides a "Read more" button to expand and view the full content.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Displays text content with a fixed height and width.
+- Limits the displayed text to a specified number of lines.
+- Truncates the text if it exceeds the maximum number of lines.
+- Provides a "Read more" button to expand and view the full content.
+- Supports dynamic resizing and responsiveness.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To run this project locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository to your local machine:
 
-### `npm test`
+   ```bash
+   git clone https://github.com/thughesnpsf/description-component-react.git
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory:
 
-### `npm run build`
+   ```bash
+   cd description-component-react
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies using npm or yarn:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   or
 
-### `npm run eject`
+   ```bash
+   yarn install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   or
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   yarn start
+   ```
 
-## Learn More
+5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to view the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To use the DescriptionComponent in your own project, follow these steps:
 
-### Code Splitting
+1. Copy the `DescriptionComponent.js` file from this project into your React application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Import the `DescriptionComponent` into your desired component file:
 
-### Analyzing the Bundle Size
+   ```javascript
+   import DescriptionComponent from "./path/to/DescriptionComponent";
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Use the `DescriptionComponent` in your JSX with the desired text content:
 
-### Making a Progressive Web App
+   ```javascript
+   <DescriptionComponent text="Your text content goes here." />
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Customize the `maxLines` prop if you want to limit the number of visible lines differently.
 
-### Advanced Configuration
+5. Feel free to ask questions if you need help!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+This project is licensed under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
